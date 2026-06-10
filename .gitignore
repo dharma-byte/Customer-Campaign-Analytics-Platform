@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+.env
+
+# Credentials and secrets — NEVER commit these
+config/config.yaml
+.env
+*.pem
+*.key
+secrets/
+
+# Data files — raw data should not be committed to Git
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/*.csv
+data/processed/*.parquet
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ML model binaries
+ml_models/trained_models/*.pkl
+ml_models/trained_models/*.joblib
+ml_models/trained_models/*.json
+
+# Power BI (large binary files — store in Git LFS or SharePoint)
+reports/power_bi/*.pbix
+
+# Logs
+logs/*.log
+logs/*.log.*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
